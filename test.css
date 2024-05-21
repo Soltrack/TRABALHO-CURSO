@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.header img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.um {
+    background-color: #ffffff;
+
+}
+
+.dois {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.tres {
+    background-color: #1B1721;
+}
+
+.quatro {
+    height: 100vh;
+}
+
+.cinco {
+    background-color: #1B1721;
+}
+
+.seis {
+    background-color: #000000;
+}
+
+.sete {
+    background-color: #e71db7;
+}
+
+.paginas {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.paginas .pagina {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    /*align-items: center;
+    justify-content: center;*/
+}
+
+.pagina {
+    display: flex;
+    padding: 45px 0px;
+}
+
+.fundo {
+    padding: 60px 10px 0;
+    background-color: #8c52ff;
+    width: 100%;
+    height: 80%;
+}
+
+.borda {
+    border-radius: 55px;
+    width: 96%;
+    height: 70%;
+    background-color: #000;
+    box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    justify-content: ce;
+    margin: 3% 1% 0 2%;
+    padding: 21px 27px;
+    overflow: hidden;
+
+}
+
+.crash-img {
+
+    border-radius: 30px;
+    width: 95%;
+    height: 90%;
+    background-color: #ff0000;
+    box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    justify-content: center;
+    align-self: flex-end;
+    right: 33px;
+    overflow: hidden;
+}
+
+.borda:hover .crash-img {
+    width: 62%;
+    transition: all 2s;
+
+}
+
+.borda:hover .crash img {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+}
+
+.crash-img img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.crash {
+    border-radius: 55px 0 0 55px;
+    width: 35%;
+    height: 90%;
+    background-color: #8965d2;
+    box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    justify-content: left;
+    align-self: center;
+    overflow: hidden;
+    padding: 32px 37px;
+}
+
+.crash img {
+    object-fit: contain;
+    object-position: center;
+    width: 1%;
+    height: 100%;
+}
+
+.titulo-crash {
+    position: absolute;
+    margin: 30px;
+    bottom: 10px;
+    /* Definindo uma distância do rodapé */
+    left: 50%;
+    /* Alinhando o elemento ao centro horizontal */
+    transform: translateX(-50%);
+    /* Corrigindo a posição para que fique exatamente centralizado */
+    text-align: left;
+    /* Alinhando o texto ao centro */
+    width: 100%;
+    /* Garantindo que ocupe a largura completa */
+}
+
+.titulo-crash p {
+    font-weight: bold;
+    /* Estilo negrito */
+    font-size: 19px;
+    /* Tamanho da fonte */
+}
+
+.fundo-video {
+    width: 100%;
+    height: 100vh;
+}
+
+.fundo-video video {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo-fnf {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.fundo-fnf img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.colecao-fnf {
+    transform: translateY(80px);
+    z-index: 1;
+    padding: 40px 0 0 100px;
+    width: 80%;
+    height: 40px;
+}
+
+.colecao-fnf p {
+    font-family: 'alike';
+    color: #ffffff;
+    font-weight: 100;
+    /* Estilo negrito */
+    font-size: 25px;
+    /* Tamanho da fonte */
+
+}
+
+  
+
+.titulo-fnf {
+    z-index: 1;
+    transform: translateY(90px);
+
+    padding: 50px 0 0 60px;
+    width: 50%;
+    text-align: center;
+    height: 50px;
+
+}
+
+.titulo-fnf p {
+    color: #ffffff;
+    font-weight: 650;
+    /* Estilo negrito */
+    font-size: 50px;
+    /* Tamanho da fonte */
+}
+
+.sinopse-fnf {
+    transform: translateY(100px);
+    z-index: 1;
+    padding: 90px 0 0 30px;
+    width: 50%;
+    text-align: center;
+    height: 90px;
+}
+
+.sinopse-fnf p {
+    color: #ffffff;
+    font-weight: 250;
+    /* Estilo negrito */
+    font-size: 30px;
+    /* Tamanho da fonte */
+}
+
+.b {
+    z-index: 1;
+    padding: 70px;
+    width: 100%;
+    transform: translateY(130px);
+    justify-content: center;
+    text-align: right;
+}
+
+.fnf p {
+    color: #ffffff;
+    font-weight: 550;
+    /* Estilo negrito */
+    font-size: 30px;
+}
+
+.buttao button {
+    border: none;
+    font-weight: 550;
+    /* Estilo negrito */
+    font-size: 25px;
+    margin: 30px;
+    padding: 20px;
+    width: 25%;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.bloco-de-textos {
+    width: 60%;
+    height: 100%;
+    padding: 90px 70px;
+}
+
+.lumes {
+    height: 25%;
+    align-content: center;
+}
+
+.lumes p {
+    color: #ffffff;
+    font-weight: 250;
+    /* Estilo negrito */
+    font-size: 30px;
+}
+
+.bloco-inf {
+    padding: 10px 0px 0px 0px;
+    width: 30%;
+}
+
+.bloco-inf p {
+    color: #eaea04;
+    font-weight: 250;
+    /* Estilo negrito */
+    font-size: 20px;
+}
+
+.b2 {
+    display: flex;
+    padding: 30px 0px 0px 0px;
+    gap: 10px;
+    flex-direction: column;
+    
+}
+
+.slogan p {
+    color: #ffffff;
+    font-weight: 250;
+    /* Estilo negrito */
+    font-size: 25px;
+}
+
+.buttao2 button {
+    border: none;
+    font-weight: 550;
+    /* Estilo negrito */
+    font-size: 25px;
+    margin: 30px 0  0  0 ;
+    padding: 10px;
+    width: 50%;
+    
+    border-radius: 50px;
+    text-align: center;
+}
+
+.fundolumes {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.fundolumes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gow-texto {
+    text-align: center;
+    
+    z-index: 1;
+    padding: 40px 0 0 100px;
+    width: 40%;
+    height: 100%;
+    align-content: center;
+}
+
+.gow-texto p {
+    color: #ffffff;
+    font-weight: 100;
+    /* Estilo negrito */
+    font-size: 25px;
+    /* Tamanho da fonte */
+}
+
+.fundo-gow {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fundo-gow img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+.fundo-ocean {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fundo-ocean img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+::-webkit-scrollbar {
+    position: absolute;
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);    border-radius: 20px;
+    animation: barraderolagem 1.5s linear infinite;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    scale: 1.15;
+    animation: barraderolagem 0.7s linear infinite;
+    transform: translateY(-15px);
+  }
+@keyframes barraderolagem{
+    100% {
+        filter: hue-rotate(360deg);
+      }
+  }
+  
+@media screen and (max-width: 1020px) {
+
+
+    .fundo {
+        padding: 60px 10px 0;
+        width: 100%;
+        height: 80%;
+    }
+    
+    .borda {
+        border-radius: 55px;
+        width: 96%;
+        height: 70%;
+        background-color: #000;
+        box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        margin: 3% 1% 0 2%;
+        padding: 21px 27px;
+        overflow: hidden;
+    
+    }
+    
+    .crash-img {
+    
+        border-radius: 30px;
+        width: 85%;
+        height: 91%;
+        background-color: #ff0000;
+        box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        justify-content: center;
+        align-self: flex-end;
+        right: 25px;
+        bottom: 33px;
+        overflow: hidden;
+    }
+    
+    .borda:hover .crash-img {
+        width: 85%;
+        height: 42%;
+        transition: all 2s;
+    
+    }
+    
+    .borda:hover .crash img {
+        width: 100%;
+        height: 100%;
+        transition: all 2s;
+    }
+    
+    .crash-img img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .crash {
+        border-radius:  55px  55px 0 0 ;
+        width: 85%;
+        height: 50%;
+        background-color: #8965d2;
+        box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        justify-content: left;
+        align-self: center;
+        overflow: hidden;
+        padding: 32px 37px;
+    }
+    
+    .crash img {
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        height: 0%;
+    }
+    
+    .titulo-crash {
+        position: absolute;
+        margin: 30px;
+        bottom: 10px;
+        /* Definindo uma distância do rodapé */
+        left: 50%;
+        /* Alinhando o elemento ao centro horizontal */
+        transform: translateX(-50%);
+        /* Corrigindo a posição para que fique exatamente centralizado */
+        text-align: left;
+        /* Alinhando o texto ao centro */
+        width: 100%;
+        /* Garantindo que ocupe a largura completa */
+    }
+    
+    .titulo-crash p {
+        font-weight: bold;
+        /* Estilo negrito */
+        font-size: 12px;
+        /* Tamanho da fonte */
+    }
+    
+    .fundo-video {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .fundo-video video {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .fundo-fnf {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: 0;
+    }
+    
+    .fundo-fnf img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .colecao-fnf {
+        align-self: center;
+        transform: translateY(10px);
+        z-index: 1;
+        padding: 40px 0 0 61px;
+        width: 100%;
+        height: 40px;
+    }
+    
+    .colecao-fnf p {
+        font-family: 'alike';
+        color: #ffffff;
+        font-weight: 100;
+        /* Estilo negrito */
+        font-size: 12px;
+        /* Tamanho da fonte */
+    }
+    
+    .titulo-fnf {
+        z-index: 1;
+        transform: translateY(10px);
+        padding: 50px 0 0 35px;
+        width: 80%;
+        align-self: center;
+        text-align: center;
+        height: 50px;
+    
+    }
+    
+    .titulo-fnf p {
+        color: #ffffff;
+        font-weight: 650;
+        /* Estilo negrito */
+        font-size: 18px;
+        /* Tamanho da fonte */
+    }
+    
+    .sinopse-fnf {
+        transform: translateY(1px);
+        z-index: 1;
+        padding: 50px 0 0 2px;
+        align-self: center;
+        width: 50%;
+        text-align: center;
+        height: 90px;
+    }
+    
+    .sinopse-fnf p {
+        color: #ffffff;
+        font-weight: 250;
+        /* Estilo negrito */
+        font-size: 20px;
+        /* Tamanho da fonte */
+    }
+    
+    .b {
+        z-index: 1;
+        padding: 70px;
+        width: 100%;
+        transform: translateY(130px);
+        justify-content: center;
+        text-align: right;
+    }
+    
+    .fnf p {
+        color: #ffffff;
+        font-weight: 550;
+        /* Estilo negrito */
+        font-size: 20px;
+    }
+    
+    .buttao{
+        border: none;
+        cursor: pointer;
+        align-self: center;
+        font-weight: 550;
+        /* Estilo negrito */
+        font-size: 25px;
+        margin:20px 0 0 0 ;
+        padding: 0px 0 0 0;
+        width: 100%;
+        border-radius: 50px;
+        text-align: center;
+    }
+    
+    .buttao button {
+        margin: 0px;
+        padding: 10px;
+        width: 100%;
+    }
+    .bloco-de-textos {
+        width: 80%;
+        height: 100%;
+        padding: 10px 20px;
+    }
+    
+    .lumes {
+        
+        height: 25%;
+        align-content: center;
+    }
+    
+    .lumes p {
+        color: #ffffff;
+        font-weight: 250;
+        /* Estilo negrito */
+        font-size: 20px;
+    }
+    
+    .bloco-inf {
+        padding: 10px 0px 0px 0px;
+        width: 30%;
+    }
+    
+    .bloco-inf p {
+        color: #eaea04;
+        font-weight: 250;
+        /* Estilo negrito */
+        font-size: 20px;
+    }
+    
+    .b2 {
+        display: flex;
+        padding: 30px 0px 0px 0px;
+        gap: 10px;
+        flex-direction: column;
+        
+    }
+    
+    .slogan p {
+        color: #ffffff;
+        font-weight: 250;
+        /* Estilo negrito */
+        font-size: 25px;
+    }  
+      .buttao2{
+        border: none;
+        cursor: pointer;
+        align-self: center;
+        font-weight: 550;
+        /* Estilo negrito */
+        font-size: 25px;
+        margin:20px 0 0 0 ;
+        padding: 0px 0 0 0;
+        width: 100%;
+        border-radius: 50px;
+        text-align: center;
+    }
+    
+
+    
+    .buttao2 button {
+        margin: 0px;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .fundolumes {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .fundolumes img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .gow-texto {
+        text-align: center;
+
+        z-index: 1;
+        padding: 40px 0 0 100px;
+        width: 80%;
+        height: 100%;
+        align-content: center;
+    }
+    
+    .gow-texto p {
+        color: #ffffff;
+        font-weight: 100;
+        /* Estilo negrito */
+        font-size: 25px;
+        /* Tamanho da fonte */
+    }
+    
+    .fundo-gow {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .fundo-gow img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .fundo-ocean {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .fundo-ocean img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        object-position: center;
+    }
+
+}
